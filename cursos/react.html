@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <div>
+                <a href="../index.html"><h3>CarriFast</h3></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>Bootcamps
+                        <div class="contenedor-nav-flotante">
+                            <div class="boot-1">
+                                <div>
+                                    <img src="../img/Developer activity-amico.svg" alt="">
+                                </div> 
+                                <div>
+                                    <p>Bootcamp - Desarollo Web</p>
+                                    <span>Inicio - 20 ene. 2022</span>
+                                </div>
+                            </div>
+                            <div class="boot-1">
+                                <div>
+                                    <img src="../img/Developer activity-rafiki.svg" alt="">
+                                </div> 
+                                <div>
+                                    <p>Bootcamp - Desarollo Movil</p>
+                                    <span>Inicio - 22 ene. 2022</span>
+                                </div>
+                            </div>
+                            <div class="boot-1">                                
+                            <div>
+                                <img src="../img/ia-boot.svg" alt="">
+                            </div> 
+                            <div>
+                                <p>Master en Inteligencia Artificial</p>
+                                <span>Inicio - 18 ene. 2022</span>
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Cursos</li>
+                    <li>Talleres</li>
+                </ul>
+            </nav>
+            <div class="input-contenedor">
+                <input type="search" name="input-search" id="input-search">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+            <div class="carrito">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <div class="elementos-cart-length"></div>
+                <div class="elementos-carrito">
+                    <!-- Aqui van los elementos del carrito -->
+
+                    <input type="submit" class="vaciar-carrito" value="Vaciar Carrito">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-cursos">
+        <section>
+            <div class="info-curso">
+                <div class="img-info-curso">
+                  <img src="https://reactjs.org/logo-og.png" alt="">
+                </div>
+                <div class="titulo-curso-p-1">
+                    <div><h2>Curso Profesional de React.js</h2></div>
+                    <div class="descripcion"><p>Context API, MERN, Hooks, Firestore, JWT, Testing, Autenticaciones, Despliegues, CRUD, Logs, SASS, Multiple Routers...</p></div>
+                    <div class="creador"><p><span>Creador:</span>  Bryan Sanchez</p> </div>
+                    <div class="añadir-carrito">
+                        <input type="submit" value="Añadir Carrito">
+                        <input type="submit" value="Comprar ahora">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/app.js"></script>
+</body>
+</html>

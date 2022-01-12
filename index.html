@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <div>
+                <h3>CarriFast</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li>Bootcamps
+                        <div class="contenedor-nav-flotante">
+                            <div class="boot-1">
+                                <div>
+                                    <img src="img/Developer activity-amico.svg" alt="">
+                                </div> 
+                                <div>
+                                    <p>Bootcamp - Desarollo Web</p>
+                                    <span>Inicio - 20 ene. 2022</span>
+                                </div>
+                            </div>
+                            <div class="boot-1">
+                                <div>
+                                    <img src="img/Developer activity-rafiki.svg" alt="">
+                                </div> 
+                                <div>
+                                    <p>Bootcamp - Desarollo Movil</p>
+                                    <span>Inicio - 22 ene. 2022</span>
+                                </div>
+                            </div>
+                            <div class="boot-1">                                
+                            <div>
+                                <img src="img/ia-boot.svg" alt="">
+                            </div> 
+                            <div>
+                                <p>Master en Inteligencia Artificial</p>
+                                <span>Inicio - 18 ene. 2022</span>
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Cursos</li>
+                    <li>Talleres</li>
+                </ul>
+            </nav>
+            <div class="input-contenedor">
+                <input type="search" name="input-search" id="input-search">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+            <div class="carrito">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <div class="elementos-cart-length"></div>
+                    <div class="contenedor-carrito">
+                        <div class="elementos-carrito">
+                            <!-- Aqui van los elementos del carrito -->
+        
+                        </div>
+                        <input type="submit" class="vaciar-carrito" value="Vaciar Carrito">
+                    </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="titulo-cursos-main">
+                <h2>Cursos Disponibles</h2>
+            </div>
+            <div class="cursos-lista">
+                    <div class="card">
+                        <div class="imagen-card">
+                            <img src="img/logo-react.png" alt="imagen-react">
+                        </div>
+                        <div class="titulo-card">
+                            <p>Bryan Sanchez</p>
+                            <span>$20</span>
+                        </div>
+                        <div>
+                            <input type="submit" class="agregar-carrito-button" value="Añadir Carrito" data-id="1">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imagen-card">
+                            <img src="img/logo-angular.jfif" alt="">
+                        </div>
+                        <div class="titulo-card">
+                            <p>Ricardo Morales</p>
+                            <span>$20</span>
+                        </div>
+                        <div>
+                            <input type="submit" class="agregar-carrito-button"value="Añadir Carrito" data-id="2">
+                        </div>
+                    </div>    
+                    <div class="card">
+                        <div class="imagen-card">
+                            <img src="img/logo-python.jfif" alt="">
+                        </div>
+                        <div class="titulo-card">
+                            <p>Bryan Sanchez</p>
+                            <span>$20</span>
+                        </div>
+                        <div>
+                            <input type="submit" class="agregar-carrito-button" value="Añadir Carrito" data-id="3">
+                        </div>
+                    </div>  
+                    <div class="card">
+                    <div class="imagen-card">
+                        <img src="img/logo-java.png" alt="">
+                    </div>
+                    <div class="titulo-card">
+                        <p>Daniel Peredo</p>
+                        <span>$20</span>
+                    </div>
+                    <div>
+                        <input type="submit" class="agregar-carrito-button" value="Añadir Carrito" data-id="4">
+                    </div>
+                </div>
+                    <div class="card">
+                        <div class="imagen-card">
+                            <img src="img/logo css.png" alt="">
+                        </div>
+                        <div class="titulo-card">
+                            <p>Alejandro Sanchez</p>
+                            <span>$26</span>
+                        </div>
+                        <div>
+                            <input type="submit" class="agregar-carrito-button" value="Añadir Carrito" data-id="5">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imagen-card">
+                            <img src="img/c++.jpg" alt="">
+                        </div>
+                        <div class="titulo-card">
+                            <p>Dan Guevara</p>
+                            <span>$26</span>
+                        </div>
+                        <div>
+                            <input type="submit" class="agregar-carrito-button" value="Añadir Carrito" data-id="5">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imagen-card">
+                            <img src="img/kotlin-curso.png" alt="">
+                        </div>
+                        <div class="titulo-card">
+                            <p>Sofia Aguilar</p>
+                            <span>$26</span>
+                        </div>
+                        <div>
+                            <input type="submit" class="agregar-carrito-button" value="Añadir Carrito" data-id="5">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imagen-card">
+                            <img src="img/flutter-curso.jpg" alt="">
+                        </div>
+                        <div class="titulo-card">
+                            <p>Fernando Hererra</p>
+                            <span>$26</span>
+                        </div>
+                        <div>
+                            <input type="submit" class="agregar-carrito-button" value="Añadir Carrito" data-id="5">
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

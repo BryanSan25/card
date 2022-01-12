@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+body {
+    background-color: aliceblue;
+}
+/* header */
+header {
+    background-color: rgb(98, 0, 255);
+    position: sticky;
+    top: 0;
+}
+.contenedor-header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+/* nav */
+@media (max-width: 380px) {
+    nav {
+        display: none;
+    }
+}
+nav ul li .contenedor-nav-flotante {
+    display: none;
+}
+nav ul li:hover .contenedor-nav-flotante {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    padding: 30px 15px 15px 15px;
+    background-color: rgb(98, 0, 255);
+}
+header ul li div img {
+    width: 70px;
+    margin-right: 10px;
+}
+nav .boot-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(59, 0, 155);
+    padding: 10px 0;
+}
+nav .boot-1 span {
+    font-size: 13px;
+}
+nav .boot-1:last-child {
+    border: none;
+    padding: 10px 0 0 0;
+}
+ul {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width: 1120px) {
+    header ul {
+        width: 400px;
+    }
+}
+ul li {
+    list-style-type: none;
+    cursor: pointer;
+}
+header input {
+    width: 35vw;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    position: relative;
+    z-index: 999;
+}
+header input::-webkit-search-cancel-button {
+    display: none;
+}
+header input:focus {
+    outline: none;
+}
+@media (max-width: 850px) {
+    header .input-contenedor input {
+        display: none;
+    }
+}
+.input-contenedor {
+    display: flex;
+    align-items: center;
+}
+svg:nth-child(2) {
+    margin: 0 10px;
+}
+svg {
+    width: 30px;
+}
+.elementos-cart-length {
+    background-color: rgb(219, 0, 0);
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 4.5%;
+}
+.contenedor-carrito {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(98, 0, 255);
+    right: 15px;
+    display: none;
+    box-shadow: 0px -93px 23px -8px rgba(0,0,0,0.32) inset;
+    overflow: scroll;
+    padding-top: 15px;
+}
+@media (max-width: 500px) {
+    .contenedor-carrito {
+        width: 100%;
+        right: 0px;
+    }
+}
+.carrito:hover .contenedor-carrito {
+    display: block;
+}
+.contenedor-carrito::-webkit-scrollbar{
+    display: none;
+}
+.elementos-cart-length {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+input.vaciar-carrito {
+    width: 100%;
+    border-radius: 0px;
+    cursor: pointer;
+    display: none;
+    position: sticky;
+    bottom: 0;
+    background-color:darkorange;
+}
+.carrito:hover .vaciar-carrito {
+    display: block;
+}
+/* main */
+section {
+    display: flex;
+    flex-direction: column;
+}
+.titulo-cursos-main {
+    margin: 30px 0 10px 0;
+}
+.cursos-lista {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+}
+@media (max-width: 1300px) {
+    .cursos-lista {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 850px) {
+    .cursos-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 450px) {
+    .cursos-lista {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.titulo-cursos-main {
+    border-bottom: 5px solid rgb(59, 0, 155);
+    width: 280px;
+    margin-left: 25px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.titulo-cursos-main h2 {
+    color: rgb(31, 31, 31);
+    margin: 0 0 10px 0;
+}
+.card {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card:hover {
+    background-color: rgb(182, 225, 255);
+}
+.card img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+.titulo-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+}
+.card input {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(59, 0, 155);
+    color: rgb(228, 228, 228);
+    border: none;
+    border-radius: 5px;
+}
+
+.contenedor-producto {
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    border-top: 1px solid rgb(59, 0, 155);
+}
+.contenedor-producto:hover {
+    background-color: rgb(59, 0, 155);
+    cursor: pointer;
+}
+.contenedor-producto:first-child {
+    border: none;
+}
+.flex-card-creador-precio {
+    width: 170px; 
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-carrito img {
+    margin: 0 20px 0 15px;
+}
+.contenedor-carrito p {
+    font-size: 15px;
+}
+.contenedor-carrito svg {
+    width: 25px;
+    margin-left: 28px;
+}
+
+
+.card .ir-cesta {
+    background-color: gray;
+}
+.borrar-curso:hover {
+    background-color: rgb(59, 0, 155);
+    border-radius: 50%;
+}
+
+
+
+
+
+/* main cursos */
+/* .main-cursos section .info-curso {
+    display: flex;
+    margin: 60px 0;
+}
+.main-cursos section .img-info-curso {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.main-cursos section img {
+    width: 400px;
+}
+.titulo-curso-p-1 {
+    margin-right: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo-curso-p-1 h2 {
+    font-size: 35px;
+}
+.descripcion {
+    padding: 15px 0;
+}
+.creador span {
+    color: rgb(104, 104, 104);
+}
+.creador p {
+    font-size: 14px;
+}
+.añadir-carrito input {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgb(59, 0, 155);
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+}
+.añadir-carrito input:hover {
+    background-color: rgb(76, 0, 197);
+    cursor: pointer;
+}
+ */
